@@ -1,6 +1,6 @@
 <script setup>
-import { computed } from 'vue'
-import AlertInfo from '../../components/AlertInfo.vue'
+import { computed } from 'vue';
+import AlertInfo from '../../components/AlertInfo.vue';
 
 // PRÍKLAD 5: Computed – hodnota ODVODENÁ z iného stavu.
 // Vue si zapamätá výsledok (cache) a prepočíta ho len vtedy, keď sa zmení závislosť.
@@ -9,15 +9,15 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
-})
+});
 // Od Vue 3.5 ide props aj deštrukturovať so zachovaním reaktivity:
 //   const { information = {} } = defineProps({ information: Object })
 
-defineEmits(['edit'])
+defineEmits(['edit']);
 
 // "Rovná 65, Ludanice, Slovensko" → "Slovensko"
-const country = computed(() => props.information.address?.split(',').at(-1).trim() ?? '')
-const isAbroad = computed(() => country.value !== 'Slovensko')
+const country = computed(() => props.information.address?.split(',').at(-1).trim() ?? '');
+const isAbroad = computed(() => country.value !== 'Slovensko');
 </script>
 
 <template>

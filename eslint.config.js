@@ -1,7 +1,7 @@
-import globals from 'globals'
-import pluginJs from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import stylistic from '@stylistic/eslint-plugin'
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import pluginVue from 'eslint-plugin-vue';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
   { ignores: ['dist/**'] },
@@ -14,7 +14,8 @@ export default [
     rules: {
       '@stylistic/indent': ['error', 2],
       '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/semi': ['error', 'never'],
+      // bodkočiarky ako v Prettieri (semi: true)
+      '@stylistic/semi': ['error', 'always'],
     },
   },
-]
+];

@@ -9,7 +9,7 @@ defineProps({
     //   () => ({})  ✅ vráti prázdny objekt
     default: () => ({}),
   },
-})
+});
 </script>
 
 <template>
@@ -17,7 +17,7 @@ defineProps({
   <div class="profile-card">
     <div class="profile-card-content">
       <div class="profile-card-photo">
-        <img :src="information.path" alt="Fotka kontaktu">
+        <img :src="information.path" alt="Fotka kontaktu" />
       </div>
       <div class="profile-card-info">
         <div class="profile-card-header">{{ information.name }}</div>

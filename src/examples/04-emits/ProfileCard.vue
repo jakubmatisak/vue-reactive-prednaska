@@ -1,5 +1,5 @@
 <script setup>
-import AlertInfo from '../../components/AlertInfo.vue'
+import AlertInfo from '../../components/AlertInfo.vue';
 
 // PRÍKLAD 4: Emits – "props idú dole, udalosti idú hore".
 // Dieťa nemení dáta rodiča priamo, len mu oznámi, čo sa stalo.
@@ -8,13 +8,13 @@ defineProps({
     type: Object,
     default: () => ({}),
   },
-})
+});
 
-const emit = defineEmits(['edit', 'copy'])
+const emit = defineEmits(['edit', 'copy']);
 
 function onEdit(id) {
-  console.log('Klik na Upraviť – posielam emit "edit"', id)
-  emit('edit', id)
+  console.log('Klik na Upraviť – posielam emit "edit"', id);
+  emit('edit', id);
 }
 </script>
 

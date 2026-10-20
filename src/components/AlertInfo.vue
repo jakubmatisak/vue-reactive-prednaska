@@ -1,9 +1,9 @@
 <script setup>
-import {onMounted} from 'vue'
+import {onMounted} from 'vue';
 
 onMounted(() => {
-  console.log('bol som mountnuty, teraz nieco urobim')
-})
+  console.log('bol som mountnuty, teraz nieco urobim');
+});
 </script>
 
 <template>

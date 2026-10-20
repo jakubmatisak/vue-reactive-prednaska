@@ -1,10 +1,10 @@
 <script setup>
-import { computed, ref } from 'vue'
-import Example01 from './examples/01-staticky-komponent/ExampleView.vue'
-import Example02 from './examples/02-props/ExampleView.vue'
-import Example03 from './examples/03-v-for-v-if/ExampleView.vue'
-import Example04 from './examples/04-emits/ExampleView.vue'
-import Example05 from './examples/05-computed/ExampleView.vue'
+import { computed, ref } from 'vue';
+import Example01 from './examples/01-staticky-komponent/ExampleView.vue';
+import Example02 from './examples/02-props/ExampleView.vue';
+import Example03 from './examples/03-v-for-v-if/ExampleView.vue';
+import Example04 from './examples/04-emits/ExampleView.vue';
+import Example05 from './examples/05-computed/ExampleView.vue';
 
 // Každý príklad je samostatný komponent v src/examples/<krok>/
 // Prepínač si pamätá krok v URL (#1 … #5), takže ide obnoviť stránku alebo poslať odkaz.
@@ -14,14 +14,14 @@ const examples = [
   { id: 3, title: 'v-for, v-if, class binding', component: Example03 },
   { id: 4, title: 'Emits (udalosti)', component: Example04 },
   { id: 5, title: 'Computed', component: Example05 },
-]
+];
 
-const activeId = ref(Number(location.hash.slice(1)) || 1)
-const active = computed(() => examples.find(e => e.id === activeId.value) ?? examples[0])
+const activeId = ref(Number(location.hash.slice(1)) || 1);
+const active = computed(() => examples.find(e => e.id === activeId.value) ?? examples[0]);
 
 function select(id) {
-  activeId.value = id
-  location.hash = String(id)
+  activeId.value = id;
+  location.hash = String(id);
 }
 </script>
 

@@ -1,22 +1,26 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
-import data from '../../assets/data/contacts.json'
-import ProfileCard from './ProfileCard.vue'
+import { computed, onMounted, ref } from 'vue';
+import data from '../../assets/data/contacts.json';
+import ProfileCard from './ProfileCard.vue';
 
-const people = ref([])
+const people = ref([]);
 
 onMounted(() => {
-  people.value = structuredClone(data.contacts)
-})
+  people.value = data.contacts;
+  console.log(people.value);
+});
 
 // Computed aj v rodičovi – štatistika sa prepočíta sama po každej zmene v people
+// POZOR: chyba v computed zhodí celý render komponentu – kontakt bez adresy (id 99) preskočíme
 const abroadCount = computed(
-  () => people.value.filter(p => !p.address.endsWith('Slovensko')).length,
-)
+  () =>
+    people.value.filter((p) => p.address && !p.address.endsWith('Slovensko'))
+      .length,
+);
 
 function handleEdit(id) {
-  const person = people.value.find(p => p.id === id)
-  person.address = 'Hlavná 1, Viedeň, Rakúsko'
+  const person = people.value.find((p) => p.id === id);
+  person.address = 'Hlavná 1, Viedeň, Rakúsko';
 }
 </script>
 

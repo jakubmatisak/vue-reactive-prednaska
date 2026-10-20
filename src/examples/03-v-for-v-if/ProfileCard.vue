@@ -1,5 +1,5 @@
 <script setup>
-import AlertInfo from '../../components/AlertInfo.vue'
+import AlertInfo from '../../components/AlertInfo.vue';
 
 // PRÍKLAD 3: podmienené vykresľovanie (v-if / v-else) a class binding
 defineProps({
@@ -7,7 +7,7 @@ defineProps({
     type: Object,
     default: () => ({}),
   },
-})
+});
 </script>
 
 <template>
