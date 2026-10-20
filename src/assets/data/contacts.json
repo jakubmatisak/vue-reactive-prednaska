@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "path": "/imgs/man.png",
+      "name": "Anton Krivý",
+      "address": "Rovná 65, Ludanice, Slovensko",
+      "phoneNumber": "+421 123 456 789",
+      "gender": "m"
+    },
+    {
+      "id": 2,
+      "path": "/imgs/man-two.png",
+      "name": "Ferdinand Ľahký",
+      "address": "Družstevná 21/A, Trenčín, Slovensko",
+      "phoneNumber": "+421 915 147 258",
+      "gender": "m"
+    },
+    {
+      "id": 3,
+      "path": "/imgs/man-three.png",
+      "name": "Jonáš Pekný",
+      "address": "Krásna 5, Bratislava, Slovensko",
+      "phoneNumber": "+421 808 075 450",
+      "gender": "m"
+    },
+    {
+      "id": 4,
+      "path": "/imgs/man-four.png",
+      "name": "Peter Kosa",
+      "address": "Južná 1, Praha, Česká Republika",
+      "phoneNumber": "+421 908 444 555",
+      "gender": "m"
+    },
+    {
+      "id": 5,
+      "path": "/imgs/woman.png",
+      "name": "Jana Upravená",
+      "address": "Dlhá 22, Banská Bystrica, Slovensko",
+      "phoneNumber": "+421 915 075 666",
+      "gender": "f"
+    },
+    {
+      "id": 6,
+      "path": "/imgs/woman-two.png",
+      "name": "Beáta Spoločenská",
+      "address": "Krátka 4, Bernolákovo, Slovensko",
+      "phoneNumber": "+421 456 075 771",
+      "gender": "f"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+/* Spoločné štýly karty kontaktu – používajú ich všetky príklady */
+
+.profile-card {
+  text-align: left;
+  padding: 1rem;
+  width: 100%;
+  min-height: 5rem;
+  max-width: 25rem;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+.profile-card.male {
+  background: #83b5c7;
+  color: #1a1a1a;
+}
+
+.profile-card.female {
+  background: #c1562a;
+  color: #ffffff;
+}
+
+.profile-card-content {
+  display: flex;
+}
+
+.profile-card-photo,
+.profile-card-info {
+  padding: 1rem;
+}
+
+.profile-card-photo img {
+  width: 64px;
+  height: 64px;
+}
+
+.profile-card-info {
+  width: 100%;
+}
+
+.profile-card-header {
+  font-weight: bolder;
+}
+
+.profile-card-actions {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
